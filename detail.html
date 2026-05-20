@@ -33,6 +33,8 @@ FILE 2 : detail.html
       background:#e65100;
       padding:15px;
       text-align:center;
+      position:sticky;
+      top:0;
     }
 
     nav a{
@@ -42,13 +44,28 @@ FILE 2 : detail.html
       font-weight:bold;
     }
 
+    .title{
+      text-align:center;
+      padding:40px 20px 10px;
+    }
+
+    .title h2{
+      font-size:35px;
+      color:#ff5722;
+    }
+
+    .title p{
+      margin-top:10px;
+      font-size:18px;
+    }
+
     .container{
       width:90%;
       margin:auto;
       padding:40px 0;
 
       display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
       gap:25px;
     }
 
@@ -61,7 +78,7 @@ FILE 2 : detail.html
     }
 
     .card:hover{
-      transform:translateY(-10px);
+      transform:translateY(-10px) scale(1.02);
     }
 
     .card img{
@@ -80,15 +97,15 @@ FILE 2 : detail.html
     }
 
     .content p{
-      line-height:1.6;
+      line-height:1.7;
     }
 
     footer{
       background:#e65100;
       color:white;
       text-align:center;
-      padding:20px;
-      margin-top:30px;
+      padding:25px;
+      margin-top:40px;
     }
   </style>
 </head>
@@ -97,13 +114,20 @@ FILE 2 : detail.html
 
   <header>
     <h1>🌏 Budaya Nusantara</h1>
-    <p>Berbagai seni khas Indonesia</p>
+    <p>Keragaman budaya Indonesia yang kaya dan indah</p>
   </header>
 
   <nav>
     <a href="index.html">Home</a>
     <a href="detail.html">Budaya</a>
   </nav>
+
+  <div class="title">
+    <h2>✨ Seni dan Budaya Indonesia ✨</h2>
+    <p>
+      Indonesia memiliki banyak budaya unik dari berbagai daerah desu 🇮🇩
+    </p>
+  </div>
 
   <div class="container">
 
@@ -115,6 +139,20 @@ FILE 2 : detail.html
 
         <p>
           Tari tradisional dari Aceh dengan gerakan cepat dan kompak.
+          Tarian ini sering ditampilkan dalam acara budaya nasional.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Tari_Kecak.jpg">
+
+      <div class="content">
+        <h2>Tari Kecak</h2>
+
+        <p>
+          Tari khas Bali dengan suara “cak cak cak” yang unik dan
+          dipadukan dengan cerita Ramayana.
         </p>
       </div>
     </div>
@@ -126,7 +164,21 @@ FILE 2 : detail.html
         <h2>Angklung</h2>
 
         <p>
-          Alat musik khas Jawa Barat yang terbuat dari bambu.
+          Alat musik tradisional Jawa Barat yang terbuat dari bambu
+          dan dimainkan bersama-sama.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Gamelan.jpg">
+
+      <div class="content">
+        <h2>Gamelan</h2>
+
+        <p>
+          Musik tradisional dari Jawa dan Bali dengan bunyi khas
+          yang menenangkan dan harmonis.
         </p>
       </div>
     </div>
@@ -138,7 +190,21 @@ FILE 2 : detail.html
         <h2>Batik</h2>
 
         <p>
-          Kain tradisional Indonesia dengan motif khas daerah.
+          Kain tradisional Indonesia dengan motif yang berbeda-beda
+          di setiap daerah.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Batik_Mega_Mendung.jpg">
+
+      <div class="content">
+        <h2>Batik Mega Mendung</h2>
+
+        <p>
+          Motif batik khas Cirebon berbentuk awan dengan warna cerah
+          dan tampilan elegan.
         </p>
       </div>
     </div>
@@ -150,7 +216,71 @@ FILE 2 : detail.html
         <h2>Wayang Kulit</h2>
 
         <p>
-          Seni pertunjukan tradisional Jawa menggunakan boneka kulit.
+          Seni pertunjukan tradisional Jawa menggunakan boneka kulit
+          dengan cerita pewayangan.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Reog_Ponorogo.jpg">
+
+      <div class="content">
+        <h2>Reog Ponorogo</h2>
+
+        <p>
+          Kesenian khas Jawa Timur dengan topeng singa besar yang
+          sangat ikonik dan megah.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/85/Rumah_Gadang.jpg">
+
+      <div class="content">
+        <h2>Rumah Gadang</h2>
+
+        <p>
+          Rumah adat Minangkabau dengan atap menyerupai tanduk kerbau.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Tongkonan_Toraja.jpg">
+
+      <div class="content">
+        <h2>Rumah Tongkonan</h2>
+
+        <p>
+          Rumah adat khas Toraja dengan bentuk unik seperti perahu.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Sasando.jpg">
+
+      <div class="content">
+        <h2>Sasando</h2>
+
+        <p>
+          Alat musik tradisional dari Nusa Tenggara Timur yang memiliki
+          bentuk sangat unik.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Tifa.jpg">
+
+      <div class="content">
+        <h2>Tifa</h2>
+
+        <p>
+          Alat musik pukul khas Papua yang sering digunakan dalam
+          upacara adat.
         </p>
       </div>
     </div>
@@ -158,8 +288,10 @@ FILE 2 : detail.html
   </div>
 
   <footer>
-    <p>✨ Keragaman budaya Indonesia desu 🇮🇩</p>
+    <p>
+      🇮🇩 Keragaman budaya Indonesia adalah kekayaan bangsa desu ✨
+    </p>
   </footer>
 
 </body>
-</html>
+  </html>
